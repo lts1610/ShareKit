@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     core.dependency 'SSKeychain', '~> 1.2.2'
     core.dependency 'SAMTextView', '~> 0.2.1'
     core.dependency 'ShareKit/Reachability'
-    core.dependency 'SDWebImage', '~> 3.7'
+    core.dependency 'SDWebImage'
     core.dependency 'PKMultipartInputStream'
     core.dependency 'UIActivityIndicator-for-SDWebImage', '~> 1.2'
   end
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 
 s.subspec 'Evernote' do |evernote|
     evernote.source_files = 'Classes/ShareKit/Sharers/Services/Evernote/**/*.{h,m}'
-    evernote.dependency 'Evernote-SDK-iOS', '~> 1.3.1'
+    evernote.dependency 'Evernote-SDK-iOS'
     evernote.dependency 'ShareKit/Core'
     evernote.libraries = 'xml2'
 evernote.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
@@ -41,7 +41,7 @@ evernote.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' 
 
   s.subspec 'Facebook' do |facebook|
     facebook.source_files   = 'Classes/ShareKit/Sharers/Services/Facebook/**/*.{h,m}'
-    facebook.dependency 'Facebook-iOS-SDK', '~> 3.0'
+    facebook.dependency 'Facebook-iOS-SDK'
     facebook.dependency 'ShareKit/Core'
   end
 
